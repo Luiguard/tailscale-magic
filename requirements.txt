@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+httpx
+pywebview
+websockets
+plyer
+pystray
+Pillow
+psutil

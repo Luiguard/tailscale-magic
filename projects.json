@@ -1,0 +1,57 @@
+{
+    "existing:3001": {
+        "port": 3001,
+        "publicPort": "443",
+        "serve_path": "mediclean",
+        "path": null,
+        "pid": null,
+        "command": null,
+        "name": "MediClean Pro\u00ae | Medizinische Reinigung & Ordinationen Wien",
+        "description": "Running on Magic Funnel",
+        "icon_url": "/api/proxy_icon?port=3001&path=favicon.svg"
+    },
+    "project:15555": {
+        "path": "C:\\Users\\b-qu\\ki reporter",
+        "port": 15555,
+        "publicPort": "443",
+        "serve_path": "ki-radar",
+        "name": "AI Radar \u2014 Dein t\u00e4glicher KI-\u00dcberblick",
+        "description": "Autonomer KI-Radar: T\u00e4gliche Analyse und Kategorisierung der wichtigsten KI-Entwicklungen weltweit.",
+        "command": "Launcher.bat",
+        "icon_url": "/api/proxy_icon?port=15555&path=favicon.svg",
+        "pid": 15920
+    },
+    "project:3002": {
+        "path": "H:\\website schule - Kopie",
+        "port": 3002,
+        "publicPort": "443",
+        "serve_path": "NLP",
+        "name": "NLP Premium Academy | Master Your Mindset",
+        "command": "node start-all.js",
+        "pid": 27488,
+        "description": "NLP Premium Academy - Meisterschaft in Kommunikation & Emotion.",
+        "icon_url": "/api/proxy_icon?port=3002&path=favicon.svg"
+    },
+    "project:3003": {
+        "path": "D:\\abstimmung",
+        "port": 3003,
+        "publicPort": "443",
+        "serve_path": "vote",
+        "command": "node start-all.js",
+        "pid": 34664,
+        "name": "Votiva - Premium Voting Platform",
+        "description": "Secure, high-tech voting for any event or challenge.",
+        "icon_url": "/api/proxy_icon?port=3003&path=favicon.svg"
+    },
+    "project:3006": {
+        "path": "D:\\shop",
+        "port": 3006,
+        "publicPort": "443",
+        "serve_path": "shop",
+        "command": "node start-all.js",
+        "pid": 35048,
+        "name": "3D Cleaning Supplies Shop",
+        "description": "Running on Magic Funnel",
+        "icon_url": "/api/proxy_icon?port=3006&path=favicon.svg"
+    }
+}

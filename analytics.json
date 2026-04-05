@@ -1,0 +1,228 @@
+{
+    "project:3002": {
+        "hits": 153,
+        "unique_ips": [
+            "100.100.125.64",
+            "8b77721ddf67f76ffa9552f82546fd498f98ea5363d208440d2eabe3f86562d8",
+            "326dce46b20ff6fb08bf81469623b2ff813b4d1d3aa5f5fad7b26f60f2003ff2",
+            "d1d15f03b1df82900596f8fdeeae18bb3f61c9b555cfdf6edca1de9ada0c9d77",
+            "fea4d7b3ee1b8b24c306adcd465181b1e14fa54077455190bc206e747c5b46f3",
+            "2c85abfca1769f4b6e5bc0df87f3c71268220d63fe78e69f1f3f5f81d9462e5d",
+            "ae87139d2b679440dbcf056864106d0afeeb18bba5da3f2bf3e95bd6a462b3e8"
+        ],
+        "total_bytes": 7131532,
+        "last_hit": 1775330917.4609554
+    },
+    "project:3001": {
+        "hits": 357,
+        "unique_ips": [
+            "8b77721ddf67f76ffa9552f82546fd498f98ea5363d208440d2eabe3f86562d8",
+            "12ca17b49af2289436f303e0166030a21e525d266e209267433801a8fd4071a0"
+        ],
+        "total_bytes": 21992731,
+        "last_hit": 1773272223.2465537
+    },
+    "existing:5175": {
+        "hits": 4780,
+        "unique_ips": [
+            "8b77721ddf67f76ffa9552f82546fd498f98ea5363d208440d2eabe3f86562d8",
+            "12ca17b49af2289436f303e0166030a21e525d266e209267433801a8fd4071a0",
+            "326dce46b20ff6fb08bf81469623b2ff813b4d1d3aa5f5fad7b26f60f2003ff2",
+            "68be8eb80306e2face5cf62a0037b72d9339075e226a22e48f9b07fcd5847bce"
+        ],
+        "total_bytes": 20239131,
+        "last_hit": 1773274098.6687508
+    },
+    "existing:5177": {
+        "hits": 3,
+        "unique_ips": [
+            "8b77721ddf67f76ffa9552f82546fd498f98ea5363d208440d2eabe3f86562d8"
+        ],
+        "total_bytes": 972,
+        "last_hit": 1773267507.6407297
+    },
+    "project:5177": {
+        "hits": 345,
+        "unique_ips": [
+            "8b77721ddf67f76ffa9552f82546fd498f98ea5363d208440d2eabe3f86562d8"
+        ],
+        "total_bytes": 8100874,
+        "last_hit": 1773269218.1423893
+    },
+    "project:3003": {
+        "hits": 130,
+        "unique_ips": [
+            "8b77721ddf67f76ffa9552f82546fd498f98ea5363d208440d2eabe3f86562d8",
+            "326dce46b20ff6fb08bf81469623b2ff813b4d1d3aa5f5fad7b26f60f2003ff2",
+            "48623dc2901d676070ff8fb51b21919247b9e191691923eade147fc4e3f0c77b",
+            "ae87139d2b679440dbcf056864106d0afeeb18bba5da3f2bf3e95bd6a462b3e8"
+        ],
+        "total_bytes": 4846759,
+        "last_hit": 1775330923.3249664
+    },
+    "project:3006": {
+        "hits": 74,
+        "unique_ips": [
+            "8b77721ddf67f76ffa9552f82546fd498f98ea5363d208440d2eabe3f86562d8",
+            "326dce46b20ff6fb08bf81469623b2ff813b4d1d3aa5f5fad7b26f60f2003ff2",
+            "ae87139d2b679440dbcf056864106d0afeeb18bba5da3f2bf3e95bd6a462b3e8"
+        ],
+        "total_bytes": 5151502,
+        "last_hit": 1775330925.6806226
+    },
+    "project:5175": {
+        "hits": 20,
+        "unique_ips": [
+            "12ca17b49af2289436f303e0166030a21e525d266e209267433801a8fd4071a0",
+            "8b77721ddf67f76ffa9552f82546fd498f98ea5363d208440d2eabe3f86562d8"
+        ],
+        "total_bytes": 419373,
+        "last_hit": 1773270974.6963391
+    },
+    "existing:3001": {
+        "hits": 1495,
+        "unique_ips": [
+            "8b77721ddf67f76ffa9552f82546fd498f98ea5363d208440d2eabe3f86562d8",
+            "12ca17b49af2289436f303e0166030a21e525d266e209267433801a8fd4071a0",
+            "326dce46b20ff6fb08bf81469623b2ff813b4d1d3aa5f5fad7b26f60f2003ff2",
+            "2840db70ecc2437e98b7cc2ac34e5d47d4ed7a1fea7b406f2f605de66233f125",
+            "d1d15f03b1df82900596f8fdeeae18bb3f61c9b555cfdf6edca1de9ada0c9d77",
+            "48623dc2901d676070ff8fb51b21919247b9e191691923eade147fc4e3f0c77b",
+            "fea4d7b3ee1b8b24c306adcd465181b1e14fa54077455190bc206e747c5b46f3",
+            "ae87139d2b679440dbcf056864106d0afeeb18bba5da3f2bf3e95bd6a462b3e8",
+            "92409ccf1a80d7f7332faa859dda462b9dbc72bef971801745bcc5a19fec3117",
+            "c2920e6a35885837450495777f59f54819247089da5ce951758a1e2d66acab4e",
+            "1077940f03d5f6335202ed296f5129a8b007f16b2bfa40b3d8e1ab0a8968476d",
+            "431dc6e92846cf24609ce12dc2945202f90e3d25e3fc3984e0c5461d913d9bc1",
+            "3c12cf1e6dfc85ac5955f4897540e7ef6226b2132e061cbba7f43c15aa5b9de1",
+            "4dbbc9db39e5544aa4d22f23706c9cb321f55f8be2ceebeaddb049fa030f60b6",
+            "7d0f4227b7b098b60269cc3d215575a26afb0a438c5fdd79fc6ea225e95fef8a",
+            "d46f448bd9f1811a1057caad51c38bf3949d9c2c18d20ef1407333d9613fb7a0",
+            "abef6596bfc3c335d3d3b8f9648eafc232d08ef1f8813aa0a4df5f5330b2e3f3"
+        ],
+        "total_bytes": 70133546,
+        "last_hit": 1775328913.411413
+    },
+    "project:schule_copy_frontend": {
+        "hits": 22320,
+        "unique_ips": [
+            "8b77721ddf67f76ffa9552f82546fd498f98ea5363d208440d2eabe3f86562d8",
+            "326dce46b20ff6fb08bf81469623b2ff813b4d1d3aa5f5fad7b26f60f2003ff2",
+            "12ca17b49af2289436f303e0166030a21e525d266e209267433801a8fd4071a0"
+        ],
+        "total_bytes": 17050236,
+        "last_hit": 1773326526.2848032
+    },
+    "project:schule_copy_backend": {
+        "hits": 5,
+        "unique_ips": [
+            "8b77721ddf67f76ffa9552f82546fd498f98ea5363d208440d2eabe3f86562d8"
+        ],
+        "total_bytes": 252,
+        "last_hit": 1773301536.4469855
+    },
+    "project:schule_main_backend": {
+        "hits": 1,
+        "unique_ips": [
+            "8b77721ddf67f76ffa9552f82546fd498f98ea5363d208440d2eabe3f86562d8"
+        ],
+        "total_bytes": 63,
+        "last_hit": 1773334345.121691
+    },
+    "project:schule_main_frontend": {
+        "hits": 10,
+        "unique_ips": [
+            "8b77721ddf67f76ffa9552f82546fd498f98ea5363d208440d2eabe3f86562d8"
+        ],
+        "total_bytes": 137881,
+        "last_hit": 1773334350.8086317
+    },
+    "project:3004": {
+        "hits": 225,
+        "unique_ips": [
+            "8b77721ddf67f76ffa9552f82546fd498f98ea5363d208440d2eabe3f86562d8",
+            "326dce46b20ff6fb08bf81469623b2ff813b4d1d3aa5f5fad7b26f60f2003ff2",
+            "ae87139d2b679440dbcf056864106d0afeeb18bba5da3f2bf3e95bd6a462b3e8"
+        ],
+        "total_bytes": 3056082,
+        "last_hit": 1774378872.9613445
+    },
+    "project:3005": {
+        "hits": 650,
+        "unique_ips": [
+            "8b77721ddf67f76ffa9552f82546fd498f98ea5363d208440d2eabe3f86562d8",
+            "326dce46b20ff6fb08bf81469623b2ff813b4d1d3aa5f5fad7b26f60f2003ff2",
+            "5f79656b7b6a871d7433335c5a9ba9c53ef60f5247e1d7d66da5311c6ca2400d",
+            "2840db70ecc2437e98b7cc2ac34e5d47d4ed7a1fea7b406f2f605de66233f125",
+            "d1d15f03b1df82900596f8fdeeae18bb3f61c9b555cfdf6edca1de9ada0c9d77",
+            "3737612c01fb5e12786ebe488f3307f1cdc146829284d1ea81c82e456dac7f4c",
+            "b4dcdd1353a743fa600e3abe12a1e003091fe065d9eef80f6091734437186a43",
+            "ae87139d2b679440dbcf056864106d0afeeb18bba5da3f2bf3e95bd6a462b3e8",
+            "c51dfc659bf9d454146fab305249bc047fed5c177693a8892729cd3861ad2548",
+            "2b5ad6e2bd33cecfdf4b24f4a81ffae2bb988bf46b62fcbe77dfad629a01699c",
+            "ba6b6828a9071512bf6f437698cc45590b3dabd2df5d492e45e6c3577b133bf8",
+            "6c3f1fbf59f504ca9b60d45b437ed74a1323947fda4d3548c89ed4db46990dcf"
+        ],
+        "total_bytes": 20983039,
+        "last_hit": 1775124753.9049664
+    },
+    "project:3007": {
+        "hits": 2461,
+        "unique_ips": [
+            "8b77721ddf67f76ffa9552f82546fd498f98ea5363d208440d2eabe3f86562d8",
+            "ae87139d2b679440dbcf056864106d0afeeb18bba5da3f2bf3e95bd6a462b3e8",
+            "3c89f6c25dea771edbcc52c8bc1ee9fb7319ab944f768a25804aa29da1293362",
+            "ed059379e8f76cc9dcb5048abd0094614839d91e48f07bf60a93c52b397442f5",
+            "1fe75f0683cbaee36d1a9607de13721b694c8ea909eaaa24f5ac641b8c03711b",
+            "c51dfc659bf9d454146fab305249bc047fed5c177693a8892729cd3861ad2548",
+            "eeffcabe95e8d1e46867f3370298549e36c9767a4ed7fe63fa171b887b8168cb"
+        ],
+        "total_bytes": 22222933,
+        "last_hit": 1775286425.885057
+    },
+    "project:3008": {
+        "hits": 325,
+        "unique_ips": [
+            "8b77721ddf67f76ffa9552f82546fd498f98ea5363d208440d2eabe3f86562d8"
+        ],
+        "total_bytes": 8138938,
+        "last_hit": 1774552726.4250705
+    },
+    "existing:19283": {
+        "hits": 1,
+        "unique_ips": [
+            "8b77721ddf67f76ffa9552f82546fd498f98ea5363d208440d2eabe3f86562d8"
+        ],
+        "total_bytes": 353,
+        "last_hit": 1774519218.0073488
+    },
+    "project:3009": {
+        "hits": 30,
+        "unique_ips": [
+            "8b77721ddf67f76ffa9552f82546fd498f98ea5363d208440d2eabe3f86562d8"
+        ],
+        "total_bytes": 1081559,
+        "last_hit": 1774522374.1224523
+    },
+    "existing:15555": {
+        "hits": 9,
+        "unique_ips": [
+            "d46f448bd9f1811a1057caad51c38bf3949d9c2c18d20ef1407333d9613fb7a0",
+            "8b77721ddf67f76ffa9552f82546fd498f98ea5363d208440d2eabe3f86562d8"
+        ],
+        "total_bytes": 88,
+        "last_hit": 1775287802.7880676
+    },
+    "project:15555": {
+        "hits": 74,
+        "unique_ips": [
+            "8b77721ddf67f76ffa9552f82546fd498f98ea5363d208440d2eabe3f86562d8",
+            "d46f448bd9f1811a1057caad51c38bf3949d9c2c18d20ef1407333d9613fb7a0",
+            "12ca17b49af2289436f303e0166030a21e525d266e209267433801a8fd4071a0",
+            "f451eaf0afee8a9645c71238e10aae7f8b24db12c2602b371c38abc69644ce6c",
+            "6865f64515caf142a5082216f74c57c120c6e0d5d44877734730566cde9f9f49"
+        ],
+        "total_bytes": 11724607,
+        "last_hit": 1775330909.6779437
+    }
+}

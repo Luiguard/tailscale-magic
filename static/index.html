@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Funnel | Control Center</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <style>
+        /* Extra polished tweaks for index dashboard */
+        .card {
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .btn-full {
+            padding: 1rem;
+            border-radius: 16px;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-glow"></div>
+
+    <div class="container" id="dashboard-app">
+        <header>
+            <div class="logo">
+                <i class="fas fa-wand-magic-sparkles"></i>
+                <div>
+                    <h1>Magic Funnel</h1>
+                    <p class="subtitle" id="domain-subtitle">Tailscale Enterprise Control</p>
+                </div>
+            </div>
+
+            <div class="system-monitor">
+                <div class="monitor-label">System Port Map</div>
+                <div id="system-ports-grid" class="port-grid"></div>
+            </div>
+
+            <div style="display:flex;align-items:center;gap:1.25rem;">
+                <button onclick="resetAll()" class="btn-danger-outline"
+                    title="Alle Dienste stoppen & Tailscale zurücksetzen">
+                    <i class="fas fa-bomb"></i> System-Reset
+                </button>
+                <div id="status-badge" class="status-badge disconnected">
+                    <span class="dot"></span>
+                    <span id="status-text">Synchronisiere...</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="dependency-bar" id="dep-bar"></section>
+
+        <main>
+            <!-- ACTIVE SERVICES SECTION -->
+            <section class="card">
+                <div class="card-title">
+                    <h2><i class="fas fa-satellite-dish" style="color:var(--cyan)"></i> Live Cloud Services</h2>
+                    <span class="badge-count" id="active-count">0</span>
+                </div>
+                <div class="services-list" id="services-list">
+                    <div class="empty-state">
+                        <i class="fas fa-radar fa-spin" style="font-size:2rem;margin-bottom:1rem;display:block"></i>
+                        Scanne nach aktiven Instanzen...
+                    </div>
+                </div>
+            </section>
+
+            <!-- ACTION GRID -->
+            <div class="add-grid">
+                <!-- Pro Mode: Connect Existing -->
+                <section class="card add-card">
+                    <div class="card-title">
+                        <h3><i class="fas fa-plug" style="color:var(--amber)"></i> Instanz binden</h3>
+                    </div>
+                    <p class="card-desc">Verknüpfe einen lokal laufenden Dienst mit deinem Tailscale-Funnel.</p>
+                    <div class="form-group">
+                        <label>Lokaler Port</label>
+                        <input type="number" id="existing-port" placeholder="z.B. 3001" min="1" max="65535">
+                    </div>
+                    <div class="form-group">
+                        <label>Cloud-Pfad <span style="font-weight:400;color:var(--muted)">(optional)</span></label>
+                        <input type="text" id="existing-serve-path" placeholder="/blog, /admin, ...">
+                    </div>
+                    <div class="form-group">
+                        <label>Funnel Sichtbarkeit</label>
+                        <select id="existing-public-port">
+                            <option value="443">Öffentlich (HTTPS:443)</option>
+                            <option value="10000">High-Port (HTTPS:10000)</option>
+                            <option value="tailnet">Privat (Nur Tailnet)</option>
+                        </select>
+                    </div>
+                    <button onclick="addExistingApp()" class="btn btn-primary btn-full">
+                        <i class="fas fa-plus-circle"></i> Binden & Veröffentlichen
+                    </button>
+                </section>
+
+                <!-- Project Mode: Automatic Detection -->
+                <section class="card add-card">
+                    <div class="card-title">
+                        <h3><i class="fas fa-rocket" style="color:var(--purple)"></i> Projekt-Launch</h3>
+                    </div>
+                    <p class="card-desc">Wähle ein Repository – wir erledigen Build, Start und Cloud-Routing.</p>
+                    <div class="form-group">
+                        <label>Projekt-Verzeichnis</label>
+                        <div class="input-row">
+                            <input type="text" id="smart-folder-path" placeholder="D:\path\to\repo">
+                            <button onclick="browseFolder()" class="btn btn-ghost-sm" title="Durchsuchen">
+                                <i class="fas fa-folder-open"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Startbefehl Override</label>
+                        <input type="text" id="smart-command" placeholder="npm start, python main.py..."
+                            class="cmd-input" list="command-suggestions">
+                        <datalist id="command-suggestions"></datalist>
+                    </div>
+                    <div id="detection-details" class="detection-box" style="display:none;">
+                        <span class="badge" id="project-type-badge">AUTO</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Cloud-Pfad <span style="font-weight:400;color:var(--muted)">(optional)</span></label>
+                        <input type="text" id="new-serve-path" placeholder="/shop, /api, ...">
+                    </div>
+                    <div class="form-group">
+                        <label>Funnel Sichtbarkeit</label>
+                        <select id="new-public-port">
+                            <option value="443">Öffentlich (HTTPS:443)</option>
+                            <option value="10000">High-Port (HTTPS:10000)</option>
+                            <option value="tailnet">Privat (Nur Tailnet)</option>
+                        </select>
+                    </div>
+                    <button onclick="hostProject()" class="btn btn-accent btn-full">
+                        <i class="fas fa-bolt"></i> Deployment starten
+                    </button>
+                </section>
+            </div>
+        </main>
+
+        <!-- FLOATING LOGS -->
+        <section id="log-viewer" class="log-viewer" style="display: none;">
+            <div class="log-header">
+                <h3><i class="fas fa-terminal"></i> Runtime Stream: <span id="log-project-name"
+                        style="color:var(--cyan)"></span></h3>
+                <button onclick="closeLogs()" class="btn-icon"><i class="fas fa-times"></i></button>
+            </div>
+            <div id="log-content" class="log-content"></div>
+        </section>
+    </div>
+
+    <!-- UI TOAST -->
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+    <script>
+        // Smooth entry animation
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.style.opacity = '0';
+            setTimeout(() => {
+                document.body.style.transition = 'opacity 0.8s ease';
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+    </script>
+</body>
+
+</html>

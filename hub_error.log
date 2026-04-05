@@ -1,0 +1,1101 @@
+Exception in thread Thread-1 (startup_sequence):
+Traceback (most recent call last):
+  File "D:\tailscale magic\core.py", line 182, in start_project
+    self.kill_port(port)
+  File "D:\tailscale magic\core.py", line 160, in kill_port
+    log_event(
+  File "D:\tailscale magic\core.py", line 33, in log_event
+    print(line, end="")
+  File "C:\Users\b-qu\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 22-23: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\b-qu\AppData\Local\Programs\Python\Python312\Lib\threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "C:\Users\b-qu\AppData\Local\Programs\Python\Python312\Lib\threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\tailscale magic\core.py", line 539, in startup_sequence
+    proc = self.pm.start_project(key, path, l_port, cmd)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\tailscale magic\core.py", line 224, in start_project
+    log_event(f"\u274c Error starting {key}: {e}")
+  File "D:\tailscale magic\core.py", line 33, in log_event
+    print(line, end="")
+  File "C:\Users\b-qu\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 22: character maps to <undefined>
+Magic Portal starting on port 8080...
+[2026-03-12 12:08:44] [START] Performing Magic Startup...
+[2026-03-12 12:08:44] [MONITOR] Health check loop started.
+[2026-03-12 12:08:44] Current Base Path: D:\tailscale magic
+[2026-03-12 12:08:44] Project Config: D:\tailscale magic\projects.json
+[2026-03-12 12:08:44] System PATH: C:\Program Files\PowerShell\7;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.1\bin\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.1\bin;C:\WINDOWS\system32\image2video\.venv\Scripts;C:\Program Files\Eclipse Adoptium\jdk-21.0.10.7-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-8.0.472.8-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.0\bin\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.0\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\PowerShell\7\;C:\Program Files\Tailscale\;C:\Users\b-qu\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\b-qu\AppData\Local\Programs\Python\Python312\;C:\Users\b-qu\scoop\apps\git\current\cmd;C:\Users\b-qu\scoop\shim;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2025.4.1\;C:\Program Files\Go\bin;C:\Program Files\Microsoft SQL Server\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\IncrediBuild;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Users\b-qu\AppData\Local\Programs\Python\Launcher\;C:\Users\b-qu\scoop\shims;C:\Users\b-qu\.local\bin;C:\Users\b-qu\AppData\Local\Microsoft\WindowsApps;C:\Users\b-qu\.dotnet\tools;C:\Users\b-qu\AppData\Local\Microsoft\WinGet\Links;C:\cloudflared;C:\Users\b-qu\AppData\Local\Programs\Ollama;C:\Users\b-qu\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\b-qu\AppData\Roaming\npm;C:\Users\b-qu\go\bin;D:\Users\b-qu\AppData\Local\Programs\Antigravity\bin
+[REMAP] Restoring Funnel: existing:3001 -> :443
+[2026-03-12 12:09:34] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:09:34] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:09:34] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:09:34] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:09:35] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:09:35] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:09:35] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:09:35] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:09:35] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:09:36] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:09:36] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:09:36] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:09:36] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:09:36] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:09:36] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:09:36] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:09:36] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:09:36] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:09:37] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:09:37] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:09:37] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:09:37] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:09:37] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:09:37] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:09:37] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:09:37] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:09:37] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:09:38] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:09:38] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:09:38] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:09:38] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:09:38] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:09:39] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:09:39] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=
+[2026-03-12 12:09:39] [PROXY_REQ] GET schule-kopie/vite.svg q=
+[2026-03-12 12:09:40] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:09:40] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:09:40] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/vite.svg q=
+[2026-03-12 12:09:40] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:09:40] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:09:40] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:09:40] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=
+[2026-03-12 12:09:41] [PROXY_REQ] GET schule-kopie/vite.svg q=
+[2026-03-12 12:09:41] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:09:41] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:09:41] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:09:41] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:09:42] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:09:42] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:09:42] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:09:42] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:09:42] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:09:42] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:09:42] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:09:42] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:09:42] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:09:42] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:09:42] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:09:42] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:09:42] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:09:42] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:09:42] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:09:42] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:09:42] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:09:42] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:09:42] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:09:42] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:09:42] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:09:42] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:09:42] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:09:42] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:09:42] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=
+[2026-03-12 12:09:42] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:09:42] [PROXY_REQ] GET schule-kopie/vite.svg q=
+[2026-03-12 12:09:42] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:09:43] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:09:43] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:09:44] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:09:45] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:09:45] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:09:45] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:09:45] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:09:45] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:09:45] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:09:45] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:09:45] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:09:45] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:09:45] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:09:45] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:09:45] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:09:45] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:09:45] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:09:45] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:09:45] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:09:45] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:09:45] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:09:45] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:09:45] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:09:45] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:09:45] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:09:45] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:09:45] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:09:45] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=
+[2026-03-12 12:09:45] [PROXY_REQ] GET schule-kopie/vite.svg q=
+[2026-03-12 12:09:47] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:09:49] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:09:49] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:09:49] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:09:49] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:09:49] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:09:49] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:09:49] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:09:49] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:09:49] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:09:49] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:09:49] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:09:49] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:09:49] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:09:49] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:09:49] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:09:49] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:09:49] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:09:49] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:09:49] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:09:49] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:09:49] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:09:49] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:09:49] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=
+[2026-03-12 12:09:49] [PROXY_REQ] GET schule-kopie/vite.svg q=
+[2026-03-12 12:09:50] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:09:53] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:09:53] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:09:53] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:09:53] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:09:54] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:09:54] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:09:54] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:09:54] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:09:54] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:09:54] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:09:54] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:09:54] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:09:54] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:09:54] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:09:54] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:09:54] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:09:54] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:09:54] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:09:54] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:09:54] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:09:54] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:09:54] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:09:54] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:09:54] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=
+[2026-03-12 12:09:54] [PROXY_REQ] GET schule-kopie/vite.svg q=
+[2026-03-12 12:09:55] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:09:55] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:09:55] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:09:55] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:09:55] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:09:55] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:09:56] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:09:56] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:09:56] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:09:56] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:09:56] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:09:56] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:09:56] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:09:56] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:09:56] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:09:56] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:09:56] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:09:56] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:09:56] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:09:56] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:09:56] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:09:56] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:09:56] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=
+[2026-03-12 12:09:56] [PROXY_REQ] GET schule-kopie/vite.svg q=
+[2026-03-12 12:09:58] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:09:59] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:09:59] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:09:59] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:09:59] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:09:59] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:09:59] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:09:59] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:09:59] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:09:59] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:09:59] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:09:59] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:09:59] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:09:59] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:09:59] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:09:59] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:09:59] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:09:59] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:09:59] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:09:59] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:09:59] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:09:59] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:09:59] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:09:59] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=
+[2026-03-12 12:09:59] [PROXY_REQ] GET schule-kopie/vite.svg q=
+[2026-03-12 12:10:00] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:10:03] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:10:03] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:10:03] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:10:03] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:10:03] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:10:03] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:10:03] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:10:03] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:10:03] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:10:03] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:10:03] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:10:03] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:10:03] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:10:03] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:10:03] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:10:03] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:10:03] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:10:03] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:10:03] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:10:03] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:10:03] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:10:03] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:10:03] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=
+[2026-03-12 12:10:03] [PROXY_REQ] GET schule-kopie/vite.svg q=
+[2026-03-12 12:10:04] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:10:07] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:10:07] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:10:07] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:10:07] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:10:07] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:10:07] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:10:08] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:10:08] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:10:08] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:10:08] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:10:08] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:10:08] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:10:08] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:10:08] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:10:08] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:10:08] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:10:08] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:10:08] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:10:08] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:10:08] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:10:08] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:10:08] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:10:08] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=
+[2026-03-12 12:10:08] [PROXY_REQ] GET schule-kopie/vite.svg q=
+[2026-03-12 12:10:08] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:10:12] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:10:12] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:10:12] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:10:12] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:10:12] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:10:13] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:10:13] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:10:13] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:10:13] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:10:13] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:10:13] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:10:13] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:10:13] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:10:13] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:10:13] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:10:13] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:10:13] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:10:13] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:10:13] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:10:13] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:10:13] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:10:13] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:10:13] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:10:13] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=
+[2026-03-12 12:10:13] [PROXY_REQ] GET schule-kopie/vite.svg q=
+[2026-03-12 12:10:15] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:10:15] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:10:15] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:10:16] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:10:16] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:10:16] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:10:16] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:10:16] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:10:16] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:10:16] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:10:16] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:10:16] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:10:16] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:10:16] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:10:16] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:10:16] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:10:16] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:10:16] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:10:16] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:10:16] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:10:16] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:10:16] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:10:16] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=
+[2026-03-12 12:10:16] [PROXY_REQ] GET schule-kopie/vite.svg q=
+[2026-03-12 12:10:17] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:10:17] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:10:17] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:10:17] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:10:17] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:10:17] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:10:17] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:10:17] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:10:17] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:10:17] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:10:17] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:10:17] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:10:17] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:10:17] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:10:17] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:10:17] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:10:17] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:10:17] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:10:17] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:10:17] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:10:17] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:10:17] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:10:17] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:10:18] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=
+[2026-03-12 12:10:18] [PROXY_REQ] GET schule-kopie/vite.svg q=
+[2026-03-12 12:10:20] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:10:20] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:10:20] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:10:20] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:10:20] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:10:20] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:10:20] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:10:21] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:10:21] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:10:21] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:10:21] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:10:21] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:10:21] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:10:21] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:10:21] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:10:21] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:10:21] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:10:21] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:10:21] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:10:21] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:10:21] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:10:21] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:10:21] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:10:21] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=
+[2026-03-12 12:10:21] [PROXY_REQ] GET schule-kopie/vite.svg q=
+[2026-03-12 12:10:22] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:10:22] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:10:22] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:10:23] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:10:23] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:10:23] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:10:23] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:10:23] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:10:23] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:10:23] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:10:23] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:10:23] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:10:23] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:10:23] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:10:23] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:10:23] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:10:23] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:10:23] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:10:23] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:10:23] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:10:23] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:10:23] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:10:23] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:10:23] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=
+[2026-03-12 12:10:23] [PROXY_REQ] GET schule-kopie/vite.svg q=
+[2026-03-12 12:10:24] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:10:24] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:10:24] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:10:24] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:10:24] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:10:24] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:10:24] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:10:24] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:10:24] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:10:24] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:10:24] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:10:24] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:10:24] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:10:24] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:10:24] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:10:24] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:10:24] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:10:24] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:10:24] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:10:24] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:10:24] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:10:24] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:10:25] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=
+[2026-03-12 12:10:25] [PROXY_REQ] GET schule-kopie/vite.svg q=
+[2026-03-12 12:10:25] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:10:28] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:10:28] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:10:28] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:10:28] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:10:28] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:10:29] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:10:29] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:10:29] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:10:29] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:10:29] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:10:29] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:10:29] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:10:29] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:10:29] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:10:29] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:10:29] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:10:29] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:10:29] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:10:29] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:10:29] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:10:29] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:10:29] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:10:29] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:10:29] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=
+[2026-03-12 12:10:29] [PROXY_REQ] GET schule-kopie/vite.svg q=
+[2026-03-12 12:10:29] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:10:32] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:10:32] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:10:32] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:10:32] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:10:32] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:10:33] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:10:33] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:10:33] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:10:33] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:10:33] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:10:33] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:10:33] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:10:33] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:10:33] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:10:33] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:10:33] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:10:33] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:10:33] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:10:33] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:10:33] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:10:33] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:10:33] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:10:33] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=
+[2026-03-12 12:10:33] [PROXY_REQ] GET schule-kopie/vite.svg q=
+[2026-03-12 12:10:33] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:10:37] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:10:37] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:10:37] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:10:37] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:10:37] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:10:37] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:10:38] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:10:38] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:10:38] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:10:38] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:10:38] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:10:38] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:10:38] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:10:38] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:10:38] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:10:38] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:10:38] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:10:38] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:10:38] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:10:38] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:10:38] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:10:38] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:10:38] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:10:38] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=
+[2026-03-12 12:10:38] [PROXY_REQ] GET schule-kopie/vite.svg q=
+[2026-03-12 12:10:42] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:10:42] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:10:42] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:10:42] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:10:42] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:10:42] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:10:42] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:10:42] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:10:42] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:10:42] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:10:42] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:10:42] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:10:42] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:10:42] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:10:42] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:10:42] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:10:42] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:10:42] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:10:42] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:10:42] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:10:42] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:10:42] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:10:42] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=
+[2026-03-12 12:10:42] [PROXY_REQ] GET schule-kopie/vite.svg q=
+[2026-03-12 12:10:42] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:10:45] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:10:45] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:10:45] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:10:45] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:10:45] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:10:45] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:10:46] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:10:46] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:10:46] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:10:46] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:10:46] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:10:46] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:10:46] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:10:46] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:10:46] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:10:46] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:10:46] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:10:46] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:10:46] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:10:46] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:10:46] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:10:46] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:10:46] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=
+[2026-03-12 12:10:46] [PROXY_REQ] GET schule-kopie/vite.svg q=
+[2026-03-12 12:10:47] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:10:50] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:10:50] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:10:50] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:10:50] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:10:50] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:10:50] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:10:50] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:10:50] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:10:50] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:10:50] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:10:50] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:10:50] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:10:50] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:10:50] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:10:50] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:10:50] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:10:50] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:10:50] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:10:50] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:10:50] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:10:50] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:10:50] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:10:51] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:10:51] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=
+[2026-03-12 12:10:51] [PROXY_REQ] GET schule-kopie/vite.svg q=
+[2026-03-12 12:10:53] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:10:53] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:10:53] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:10:53] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:10:53] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:10:53] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:10:53] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:10:53] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:10:53] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:10:53] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:10:53] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:10:53] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:10:53] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:10:53] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:10:53] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:10:53] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:10:53] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:10:53] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:10:53] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:10:53] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:10:53] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:10:53] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:10:53] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=
+[2026-03-12 12:10:53] [PROXY_REQ] GET schule-kopie/vite.svg q=
+[2026-03-12 12:10:54] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:10:54] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:10:54] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:10:54] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:10:55] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:10:55] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:10:55] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:10:55] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:10:55] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:10:55] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:10:55] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:10:55] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:10:55] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:10:55] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:10:55] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:10:55] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:10:55] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:10:55] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:10:55] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:10:55] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:10:55] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:10:55] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:10:55] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=
+[2026-03-12 12:10:55] [PROXY_REQ] GET schule-kopie/vite.svg q=
+[2026-03-12 12:10:55] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:10:58] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:10:58] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:10:58] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:10:58] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:10:58] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:10:58] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:10:58] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:10:58] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:10:58] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:10:58] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:10:58] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:10:58] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:10:58] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:10:58] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:10:58] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:10:58] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:10:58] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:10:58] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:10:58] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:10:58] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:10:58] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:10:58] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:10:58] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:10:58] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=
+[2026-03-12 12:10:58] [PROXY_REQ] GET schule-kopie/vite.svg q=
+[2026-03-12 12:10:59] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:11:00] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:11:00] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:11:00] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:11:00] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:11:00] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:11:00] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:11:00] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:11:00] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:11:00] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:11:00] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:11:00] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:11:00] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:11:00] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:11:00] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:11:00] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:11:00] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:11:00] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:11:00] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:11:00] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:11:00] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:11:00] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:11:00] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:11:01] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=
+[2026-03-12 12:11:01] [PROXY_REQ] GET schule-kopie/vite.svg q=
+[2026-03-12 12:11:03] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:11:05] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:11:05] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:11:05] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:11:05] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:11:05] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:11:05] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:11:05] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:11:06] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:11:06] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:11:06] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:11:06] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:11:06] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:11:06] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:11:06] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:11:06] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:11:06] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:11:06] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:11:06] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:11:06] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:11:06] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:11:06] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:11:06] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:11:06] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:11:06] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=
+[2026-03-12 12:11:06] [PROXY_REQ] GET schule-kopie/vite.svg q=
+[2026-03-12 12:11:09] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:11:09] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:11:09] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:11:09] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:11:10] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:11:10] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:11:10] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:11:10] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:11:10] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:11:10] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:11:10] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:11:10] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:11:10] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:11:10] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:11:10] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:11:10] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:11:10] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:11:10] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:11:10] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:11:10] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:11:10] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:11:10] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:11:10] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=
+[2026-03-12 12:11:10] [PROXY_REQ] GET schule-kopie/vite.svg q=
+[2026-03-12 12:11:10] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:11:12] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:11:12] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:11:12] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:11:12] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:11:12] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:11:12] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:11:12] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:11:12] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:11:12] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:11:12] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:11:12] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:11:12] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:11:12] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:11:12] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:11:12] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:11:12] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:11:12] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:11:12] [PROXY_REQ] GET schule-kopie/src/pages/Practice.tsx q=
+[2026-03-12 12:11:12] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=
+[2026-03-12 12:11:12] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:11:12] [PROXY_REQ] GET schule-kopie/src/pages/AboutMe.tsx q=
+[2026-03-12 12:11:12] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=import
+[2026-03-12 12:11:12] [PROXY_REQ] GET schule-kopie/src/assets/hero-bg.png q=
+[2026-03-12 12:11:12] [PROXY_REQ] GET schule-kopie/vite.svg q=
+[2026-03-12 12:11:14] [WS_CONN] Request Path: schule-kopie/hmr
+[2026-03-12 12:11:14] [WS_CONNECT] schule-kopie/hmr -> port 5180
+[2026-03-12 12:11:14] [PROXY_REQ] GET schule-kopie/hmr q=
+[2026-03-12 12:11:14] [PROXY_REQ] GET schule-kopie/ q=
+[2026-03-12 12:11:14] WS Proxy Error Path=schule-kopie/hmr Port=5180: timed out during opening handshake
+[2026-03-12 12:11:15] [PROXY_REQ] GET schule-kopie/@vite/client q=
+[2026-03-12 12:11:15] [PROXY_REQ] GET schule-kopie/src/main.tsx q=
+[2026-03-12 12:11:15] [PROXY_REQ] GET schule-kopie/@react-refresh q=
+[2026-03-12 12:11:15] [PROXY_REQ] GET schule-kopie/node_modules/vite/dist/client/env.mjs q=
+[2026-03-12 12:11:15] [PROXY_REQ] GET schule-kopie/src/index.css q=
+[2026-03-12 12:11:15] [PROXY_REQ] GET schule-kopie/src/App.tsx q=
+[2026-03-12 12:11:15] [PROXY_REQ] GET schule-kopie/src/pages/Dashboard.tsx q=
+[2026-03-12 12:11:15] [PROXY_REQ] GET schule-kopie/src/pages/Auth.tsx q=
+[2026-03-12 12:11:15] [PROXY_REQ] GET schule-kopie/src/pages/Courses.tsx q=
+[2026-03-12 12:11:15] [PROXY_REQ] GET schule-kopie/src/pages/Privacy.tsx q=
+[2026-03-12 12:11:15] [PROXY_REQ] GET schule-kopie/src/pages/LandingPage.tsx q=
+[2026-03-12 12:11:15] [PROXY_REQ] GET schule-kopie/src/pages/StudentPortal.tsx q=
+[2026-03-12 12:11:15] [PROXY_REQ] GET schule-kopie/src/pages/AboutNLP.tsx q=
+[2026-03-12 12:11:15] [PROXY_REQ] GET schule-kopie/src/pages/Techniques.tsx q=
+[2026-03-12 12:11:15] [PROXY_REQ] GET schule-kopie/src/pages/Communication.tsx q=

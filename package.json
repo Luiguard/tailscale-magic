@@ -1,0 +1,9 @@
+{
+    "name": "tailscale-magic",
+    "private": true,
+    "version": "2.0.0",
+    "description": "Magic Hub — Self-Host your projects with DDoS protection",
+    "scripts": {
+        "start": "python main.py"
+    }
+}
