@@ -1,0 +1,31 @@
+# Compiled binary
+dist/
+build/
+*.exe
+*.pkg
+*.spec
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Logs
+*.log
+*.log.*
+hub_error.log
+magic_debug.log
+
+# Project specific
+projects.json
+analytics.json
+banned_ips.json
+settings.json
+.magic_*.log
+
+# Node
+node_modules/
+package-lock.json
+.temp/
